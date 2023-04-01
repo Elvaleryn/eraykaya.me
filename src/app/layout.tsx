@@ -3,7 +3,7 @@ import "@/styles/global.css";
 import { Open_Sans, Inconsolata } from "next/font/google";
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
+  variable: "--font-opensans",
   display: "swap",
   subsets: ["latin"],
 });

@@ -20,7 +20,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        opensans: ["var(--font-open-sans)"],
+        opensans: ["var(--font-opensans)"],
         inconsolata: ["var(--font-inconsolata)"],
       },
     },

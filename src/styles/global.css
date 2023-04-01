@@ -64,6 +64,6 @@ html,
 body {
   background-color: var(--color-theme-bg);
   color: var(--color-primary-text);
-  font-family: var(--font-open-sans);
+  font-family: var(--font-opensans);
   font-weight: 500;
 }
