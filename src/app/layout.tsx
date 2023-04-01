@@ -1,4 +1,5 @@
 import Navbar from "@/components/shared/navbar";
+import { ThemeProvider } from "@/hooks/use-theme";
 import "@/styles/global.css";
 import { Open_Sans, Inconsolata } from "next/font/google";
 
@@ -25,15 +26,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      data-theme="dark"
-      className={`${inconsolata.variable} ${openSans.variable}`}
-    >
-      <body>
-        <Navbar />
-        <main>{children}</main>
-      </body>
-    </html>
+    <ThemeProvider>
+      <html
+        lang="en"
+        data-theme="dark"
+        className={`${inconsolata.variable} ${openSans.variable}`}
+      >
+        <body>
+          <Navbar />
+          <main>{children}</main>
+        </body>
+      </html>
+    </ThemeProvider>
   );
 }

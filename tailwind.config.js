@@ -17,6 +17,8 @@ module.exports = {
           900: "var(--color-primary-900)",
           950: "var(--color-primary-950)",
           text: "var(--color-primary-text)",
+          invert: "var(--color-invert)",
+          theme: "var(--color-theme-bg)",
         },
       },
       fontFamily: {

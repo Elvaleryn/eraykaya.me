@@ -16,6 +16,7 @@ html[data-theme="light"] {
   --color-primary-950: #312219;
   --color-primary-text: #000;
   --color-theme-bg: var(--color-primary-200);
+  --color-invert: #011627;
   --color-link-gradient: linear-gradient(transparent, transparent),
     linear-gradient(
       90deg,
@@ -52,6 +53,7 @@ html[data-theme="dark"] {
   --color-primary-950: #011627;
   --color-primary-text: #ffffff;
   --color-theme-bg: var(--color-primary-950);
+  --color-invert: #e5dbc3;
   --color-link-gradient: linear-gradient(transparent, transparent),
     linear-gradient(
       90deg,
