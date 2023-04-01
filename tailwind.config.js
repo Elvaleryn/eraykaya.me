@@ -19,6 +19,10 @@ module.exports = {
           text: "var(--color-primary-text)",
         },
       },
+      fontFamily: {
+        opensans: ["var(--font-open-sans)"],
+        inconsolata: ["var(--font-inconsolata)"],
+      },
     },
   },
   plugins: [],

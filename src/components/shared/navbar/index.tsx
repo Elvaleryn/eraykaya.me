@@ -1,18 +1,31 @@
 import React from "react";
 import Container from "../container";
 import cx from "classnames";
+import styles from "./styles.module.css";
+import Link from "next/link";
 const Navbar = () => {
   return (
-    <Container size="medium" className="flex">
-      <nav className={cx("my-8 px-4", "flex justify-between", "w-full")}>
+    <nav className={"text-xl py-6 font-normal"}>
+      <Container size="medium" className="flex justify-between">
         <menu className="flex [&>li]:ml-4">
-          <li>lg</li>
-          <li>ERAY KAYA</li>
+          <li>
+            <Link href="/" className="font-display max-w-sm leading-tight">
+              <span
+                className={cx(
+                  "link pb-2",
+                  styles["link-underline"],
+                  styles["link-underline-black"]
+                )}
+              >
+                lg ERAY KAYA
+              </span>
+            </Link>
+          </li>
           <li>Blog</li>
         </menu>
         <div>test</div>
-      </nav>
-    </Container>
+      </Container>
+    </nav>
   );
 };
 
