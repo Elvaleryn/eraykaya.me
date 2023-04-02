@@ -6,11 +6,11 @@ const text = cva(["text"], {
     size: {
       small: ["text-sm"],
       medium: ["text-base"],
-      large: ["text-lg"],
-      xlarge: ["text-xl"],
-      xxlarge: ["text-2xl"],
-      xxxlarge: ["text-3xl"],
-      heading: ["text-5xl"],
+      large: ["text-base"],
+      xlarge: ["text-lg"],
+      xxlarge: ["text-xl"],
+      heading: ["text-3xl"],
+      contentHead: ["text-2xl"],
     },
     leading: {
       tight: ["leading-tight"],
@@ -26,16 +26,20 @@ const text = cva(["text"], {
       normal: ["font-normal"],
       bold: ["font-bold"],
     },
-    fontStyle: {
+    fontFamily: {
       opensans: ["font-opensans"],
       inconsolata: ["font-inconsolata"],
+    },
+    fontStyle: {
+      italic: ["italic"],
+      normal: ["not-italic"],
     },
   },
   defaultVariants: {
     size: "medium",
     color: "primary",
     weight: "normal",
-    fontStyle: "opensans",
+    fontFamily: "opensans",
     leading: "normal",
   },
 });
@@ -58,11 +62,29 @@ const Text: React.FC<
       | "h5"
       | "h6";
   }
-> = ({ children, className, as, color, fontStyle, leading, size, weight }) => {
+> = ({
+  children,
+  className,
+  as,
+  color,
+  fontStyle,
+  fontFamily,
+  leading,
+  size,
+  weight,
+}) => {
   const Component = as;
   return (
     <Component
-      className={text({ className, color, fontStyle, size, leading, weight })}
+      className={text({
+        className,
+        color,
+        fontFamily,
+        size,
+        leading,
+        weight,
+        fontStyle,
+      })}
     >
       {children}
     </Component>

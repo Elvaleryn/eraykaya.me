@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
 
-const ThemeContext = React.createContext({
+import React, { createContext } from "react";
+
+const ThemeContext = createContext({
   theme: "dark",
   toggleTheme: () => {},
 });
@@ -13,7 +14,10 @@ interface IThemeProviderProps {
 export const useTheme = () => React.useContext(ThemeContext);
 
 export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = React.useState("dark");
+  const [theme, setTheme] = React.useState(() => {
+    if (typeof window === "undefined") return "dark";
+    return localStorage["theme"] || "dark";
+  });
 
   const toggleTheme = () => {
     localStorage["theme"] = theme === "dark" ? "light" : "dark";
@@ -21,7 +25,8 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
   };
 
   React.useEffect(() => {
-    if (!document) return;
+    if (typeof window === "undefined") return;
+
     // localStorage["theme"] = theme;
     document.documentElement.setAttribute("data-theme", theme);
     return () => {
@@ -30,7 +35,8 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
   }, [theme]);
 
   React.useEffect(() => {
-    if (!document) return;
+    if (typeof window === "undefined") return;
+
     const localTheme = localStorage["theme"];
     if (localTheme) {
       setTheme(localTheme);
@@ -38,7 +44,7 @@ export const ThemeProvider: React.FC<IThemeProviderProps> = ({ children }) => {
       localStorage["theme"] = theme;
     }
   }, []);
-
+  // if (typeof window === "undefined") return <></>;
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

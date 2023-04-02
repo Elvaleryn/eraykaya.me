@@ -1,8 +1,7 @@
 import React from "react";
-import cx from "classnames";
 import { cva, type VariantProps } from "class-variance-authority";
 
-const container = cva(["mx-auto my-0"], {
+const container = cva(["mx-auto my-0 px-8"], {
   variants: {
     size: {
       small: ["max-w-xl"],

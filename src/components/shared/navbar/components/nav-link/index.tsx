@@ -12,7 +12,7 @@ const NavLink: React.FC<Props & { children: React.ReactNode }> = ({
   href,
 }) => {
   return (
-    <Link href={href} className="font-display max-w-sm leading-tight">
+    <Link href={href} className="font-display max-w-sm leading-tight text-xl">
       <span
         className={cx(
           "link pb-2",

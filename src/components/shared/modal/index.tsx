@@ -48,6 +48,8 @@ const Modal: React.FC<Props> = ({ layoutId, children, setIsOpen, isOpen }) => {
     }
   };
 
+  if (typeof window === "undefined") return <></>;
+
   return ReactDOM.createPortal(
     <AnimatePresence key={layoutId}>
       {isOpen && (
@@ -67,7 +69,7 @@ const Modal: React.FC<Props> = ({ layoutId, children, setIsOpen, isOpen }) => {
           onClick={handleClickOverlay}
         >
           <motion.div
-            /*       initial={{ opacity: 0 }}
+            /* initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 0.1 }} */
             style={{ pointerEvents: "auto", overflow: "hidden" }}
@@ -76,7 +78,7 @@ const Modal: React.FC<Props> = ({ layoutId, children, setIsOpen, isOpen }) => {
           >
             <Container size={"modal"}>{children}</Container>
             <div
-              className="cursor-pointer absolute top-0 right-0"
+              className="cursor-pointer absolute top-0 right-0 md:right-5"
               onClick={() => {
                 setIsOpen(false);
               }}
