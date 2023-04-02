@@ -57,4 +57,9 @@ body {
   background-color: var(--color-theme-bg);
   color: var(--color-primary-text);
   font-family: var(--font-opensans);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }

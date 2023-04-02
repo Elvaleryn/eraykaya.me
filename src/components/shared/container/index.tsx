@@ -7,6 +7,7 @@ const container = cva(["mx-auto my-0"], {
     size: {
       small: ["max-w-xl"],
       medium: ["max-w-3xl"],
+      modal: ["max-w-5xl"],
     },
   },
 });
