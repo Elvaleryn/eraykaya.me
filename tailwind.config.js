@@ -19,6 +19,10 @@ module.exports = {
           text: "var(--color-primary-text)",
           invert: "var(--color-invert)",
           theme: "var(--color-theme-bg)",
+          content: "var(--color-content-bg)",
+        },
+        secondary: {
+          text: "var(--color-secondary-text)",
         },
       },
       fontFamily: {

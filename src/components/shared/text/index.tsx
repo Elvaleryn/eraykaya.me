@@ -10,6 +10,7 @@ const text = cva(["text"], {
       xlarge: ["text-xl"],
       xxlarge: ["text-2xl"],
       xxxlarge: ["text-3xl"],
+      heading: ["text-5xl"],
     },
     leading: {
       tight: ["leading-tight"],
@@ -44,7 +45,7 @@ interface ITextProps extends VariantProps<typeof text> {}
 const Text: React.FC<
   ITextProps & {
     children: React.ReactNode;
-    className: string;
+    className?: string;
     as:
       | "div"
       | "p"
