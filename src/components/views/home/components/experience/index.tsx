@@ -132,12 +132,18 @@ const ExperienceItem: React.FC<{ company: typeof data[0] }> = ({ company }) => {
             />
           </motion.figure>
           <article>
-            <Text as="div" size="contentHead" weight="bold" leading={"tight"}>
+            <Text
+              as="div"
+              size="contentHead"
+              weight="bold"
+              leading={"tight"}
+              color="modal"
+            >
               <motion.h1 layoutId={`${company.id}-title`}>
                 {company.name}
               </motion.h1>
             </Text>
-            <Text as="div" size="xxlarge" color="secondary">
+            <Text as="div" size="xxlarge" color="modal">
               <motion.h5 layoutId={`${company.id}-subtitle`}>
                 {company.position}
               </motion.h5>
@@ -148,6 +154,7 @@ const ExperienceItem: React.FC<{ company: typeof data[0] }> = ({ company }) => {
               size={"xxlarge"}
               leading={"relaxed"}
               className="mt-8 md:mt-4 md:max-h-[450px] md:overflow-y-auto md:pr-4"
+              color={"modal"}
             >
               <motion.div
                 layoutId={`${company.id}-description`}

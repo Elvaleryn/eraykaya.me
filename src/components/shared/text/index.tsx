@@ -21,6 +21,7 @@ const text = cva(["text"], {
     color: {
       primary: ["text-primary-text"],
       secondary: ["text-secondary-text"],
+      modal: ["text-primary-modal-text"],
     },
     weight: {
       normal: ["font-normal"],

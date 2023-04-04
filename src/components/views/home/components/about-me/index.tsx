@@ -99,10 +99,16 @@ const AboutMe = () => {
             />
           </motion.figure>
           <article>
-            <Text as="div" size="contentHead" weight="bold" leading={"tight"}>
+            <Text
+              as="div"
+              size="contentHead"
+              weight="bold"
+              leading={"tight"}
+              color={"modal"}
+            >
               <motion.h1 layoutId="about-me-title">Eray Kaya</motion.h1>
             </Text>
-            <Text as="div" size="xxlarge" color="secondary">
+            <Text as="div" size="xxlarge" color="modal">
               <motion.h5 layoutId="about-me-subtitle">Lead Developer</motion.h5>
             </Text>
 
@@ -112,6 +118,7 @@ const AboutMe = () => {
               size={"xxlarge"}
               leading={"relaxed"}
               className="mt-8 md:mt-4 md:max-h-[450px] md:overflow-x-auto md:pr-4"
+              color={"modal"}
             >
               <motion.div layoutId="about-me-description" animate>
                 As an accomplished software developer and team leader, I have

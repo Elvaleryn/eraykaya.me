@@ -20,6 +20,7 @@ module.exports = {
           invert: "var(--color-invert)",
           theme: "var(--color-theme-bg)",
           content: "var(--color-content-bg)",
+          "modal-text": "var(--color-modal-text)",
         },
         secondary: {
           text: "var(--color-secondary-text)",
