@@ -16,7 +16,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink href="https://dev.to/eraywebdev">Blog</NavLink>
+            <NavLink href="/blog-posts">Blog</NavLink>
           </li>
         </menu>
         <SwitchTheme />
