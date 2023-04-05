@@ -22,9 +22,9 @@ const data = [
     name: "3Pounds",
     position: "Software Developer",
     description:
-      "As a lead frontend developer, my responsibilities include assigning tasks to other developers, managing projects, deciding on the tech stack we will use, and of course writing code. I have a strong track record of  ",
+      "As a software developer for TRT (Turkish National TV), I played a pivotal role in the complete overhaul of their website, trt.net.tr, which receives millions of monthly viewers. My focus was primarily on frontend development using Nuxt.js, where I was responsible for tr",
     longDescription:
-      "<p>As a lead frontend developer, my responsibilities include assigning tasks to other developers, managing projects, deciding on the tech stack we will use, and of course writing code. I have a strong track record of writing and reviewing code, along with my frontend expertise, I also possess the ability to write backend code. Overall, I am a proficient and experienced developer with a commitment to delivering exceptional solutions for our team.</p><div>Key Points</div><ul><li>- Building the foundation of frontend for each project.</li><li>- Interacting with customers and helping them to solve their problems</li><li>- Organizing tasks, planning sprints for other developers.</li><li>- Mentoring junior developers to advance their skills.</li><li>- Making both technical and product-related decisions.</li><li>- Conducting code reviews and refactoring as needed.</li></ul><strong>Tech Stack:</strong> Next.js, Typescript, GraphQL, ethers.js, Sass",
+      "<p> As a software developer for TRT (Turkish National TV), I played a pivotal role in the complete overhaul of their website, trt.net.tr, which receives millions of monthly viewers. My focus was primarily on frontend development using Nuxt.js, where I was responsible for translating design into code and implementing SEO optimizations as needed.</p><div>Key Points</div><ul><li>- Renewed trt.net.tr from scratch</li><li>- Worked on frontend development using Nuxt.js</li><li>- Responsible for turning design into code and applying SEO optimizations.</li><li>-  Created a design system from scratch.</li><li>- Close collaboration with designers to ensure design system's success.</li>",
     logo: "/images/3pounds-logo.png",
   },
   {
