@@ -1,9 +1,7 @@
-import Container from "@/components/shared/container";
 import Text from "@/components/shared/text";
-import BlogPosts from "@/components/views/blog-posts";
 import cx from "classnames";
 import React from "react";
-// const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
+
 async function getPosts() {
   const response = await fetch(
     "https://dev.to/api/articles?username=eraywebdev"
@@ -11,11 +9,6 @@ async function getPosts() {
   const data = await response.json();
   return data;
 }
-/* 
-How to use your github ssh keys for different accounts
-When you have couple different github accounts and different permissions for each of them it can get...
-
-Mar 12 */
 
 const Tag = ({ tag }: { tag: string }) => {
   return (
