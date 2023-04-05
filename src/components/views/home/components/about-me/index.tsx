@@ -37,7 +37,7 @@ const AboutMe = () => {
           <article>
             <div className="flex gap-8 md:flex-col md:gap-4">
               <motion.figure
-                className="relative flex-shrink-0 w-36 h-48 md:w-24 md:h-28"
+                className="relative flex-shrink-0 w-36 h-48 md:w-24 md:h-32"
                 layoutId="about-me-figure"
               >
                 <Image
@@ -117,7 +117,7 @@ const AboutMe = () => {
               fontFamily={"inconsolata"}
               size={"xxlarge"}
               leading={"relaxed"}
-              className="mt-8 md:mt-4 md:max-h-[450px] md:overflow-x-auto md:pr-4"
+              className="mt-8 md:mt-4 md:max-h-[400px] md:overflow-x-auto md:pr-4"
               color={"modal"}
             >
               <motion.div layoutId="about-me-description" animate>
