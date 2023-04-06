@@ -4,7 +4,16 @@ import React from "react";
 
 async function getPosts() {
   const response = await fetch(
-    "https://dev.to/api/articles?username=eraywebdev"
+    "https://dev.to/api/articles?username=eraywebdev",
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Age: "0",
+        "X-Cache-Hits": "0, 0",
+        "X-Cache": "MISS, MISS",
+      },
+    }
   );
   const data = await response.json();
   return data;
