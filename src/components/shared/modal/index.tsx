@@ -73,7 +73,7 @@ const Modal: React.FC<Props> = ({ layoutId, children, setIsOpen, isOpen }) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2, delay: 0.1 }} */
             style={{ pointerEvents: "auto", overflow: "hidden" }}
-            className="relative w-[calc(100%-32px)] my-0 mx-auto flex justify-between max-h-[calc(100%-48px)] overflow-auto"
+            className="relative max-w-[content] md:w-[calc(100%-32px)] my-0 mx-auto flex justify-between max-h-[calc(100%-48px)] overflow-auto"
             id="modal-content"
           >
             <Container size={"modal"}>{children}</Container>
