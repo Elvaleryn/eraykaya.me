@@ -19,7 +19,7 @@ export const metadata = {
   title: "Eray Kaya",
   description: "Lead Developer",
   icons: {
-    icon: "/favicon.png",
+    icon: "/circular-v3.png",
   },
 };
 
