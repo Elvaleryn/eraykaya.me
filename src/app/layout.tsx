@@ -35,6 +35,7 @@ export default function RootLayout({
         data-theme="dark"
         className={`${inconsolata.variable} ${openSans.variable}`}
       >
+        
         <body>
           <Navbar />
           <main>{children}</main>
